@@ -19,6 +19,7 @@ RewriteRule ^mentions-legales$ index.php?action=mentionslegales
 RewriteRule ^temoignages$ index.php?action=temoignages
 RewriteRule ^changeinfo$ index.php?action=changeinfo
 RewriteRule ^supcompte$ index.php?action=supcompte
+RewriteRule ^etude-confinement$ index.php?action=confinement
 
 #Gestion page 404
 RewriteCond %{REQUEST_FILENAME} !-f

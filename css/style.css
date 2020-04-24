@@ -177,18 +177,23 @@ footer{
 .but{
     padding-top:50px;
 }
-.but > h1,.agir > h1, .covid > h1{
+.but > h1,.agir > h1, .covid > h1,.titreorange{
     color:var(--orange);
     text-transform: uppercase;
     padding-bottom:30px;
 }
-.but > p, .covid > p{
+.titrenoir{
+    color:black;
+    padding-bottom:30px;
+}
+.but > p, .covid > p,.txt{
     text-indent: 50px;
     text-align: justify;
     padding-bottom:30px;
     line-height: 1.5;
     padding-left:20px;
     padding-right:20px;
+    color:black;
 }
 .but > p > span, .covid > p > span{
     position:relative;
@@ -2018,6 +2023,15 @@ footer{
         margin-right: auto;
         padding-top: 25px;
     }
+
+    /* etude confinement */
+    .ban_confinement > h1{
+        font-size:17px;
+        padding: 0 10px;
+    }
+    .ban_confinement > h3{
+        font-size:13px;
+    }
 }
 
 /* Parseur bbcode */
@@ -2049,4 +2063,17 @@ blockquote
 #edition{
     float:right;
     cursor:pointer;
+}
+
+/* Page étude confinement */
+.ban_confinement{
+    flex-direction: column;
+    color:white;
+    line-height: 2.5;
+}
+.ban_conf{
+    margin-bottom:20px;
+}
+.txtpdf{
+    margin-bottom:16px;
 }

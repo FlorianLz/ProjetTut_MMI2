@@ -48,6 +48,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="description" content="Parlons harcèlement, campagne contre le harcèlement qui accompagne les victimes. Découvrez des témoignages et intéragissez."/>
         <link rel="icon" type="image/png" href="img/favicon.jpg" />
+        <meta property="og:image" content="img/favicon.jpg" />
         <title>Parlons Harcèlement</title>
 
 
@@ -79,6 +80,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         echo '<header>
             <a href="accueil" data-pjax class="menumobile"><img class="logobanniere" src="./img/logo.png" alt="Parlons Harcèlement"></a>
                 <div id="items" class="items">
+                    <a href="etude-confinement" data-pjax class="menumobile"><p>Étude confinement</p></a>
                     <a href="temoignages" data-pjax class="menumobile"><p>Témoignages</p></a>
                     <a href="ressources" data-pjax class="menumobile"><p>Ressources</p></a>
                     <a href="contact" data-pjax class="menumobile"><p>Contact</p></a>
@@ -91,6 +93,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         echo '<header>
             <a href="accueil" data-pjax class="menumobile"><img class="logobanniere" src="./img/logo.png" alt="Parlons Harcèlement"></a>
                 <div id="items" class="items">
+                <a href="etude-confinement" data-pjax class="menumobile"><p>Étude confinement</p></a>
                     <a href="temoignages" data-pjax class="menumobile"><p>Témoignages</p></a>
                     <a href="ressources" data-pjax class="menumobile"><p>Ressources</p></a>
                     <a href="contact" data-pjax class="menumobile"><p>Contact</p></a>
