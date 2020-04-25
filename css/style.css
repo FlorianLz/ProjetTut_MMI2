@@ -83,6 +83,10 @@ footer{
     text-decoration: none!important;
     color: white!important;
 }
+.items > a:focus{
+    color:white;
+    text-decoration: none;
+}
 .iconemenu, .iconemenuc{
     display:none;
     width:20px;
