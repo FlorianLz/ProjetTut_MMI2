@@ -28,6 +28,11 @@ html{
 .cc-btn{
     color:white!important;
 }
+
+.temoignagecontenu, .infos_contact > p, .txt, .but > p, .covid > p, .descagir > p{
+    font-family: 'Luciole', sans-serif;
+    line-height:1.8!important;
+}
 /* Header du site */
 header{
     width:100%;
