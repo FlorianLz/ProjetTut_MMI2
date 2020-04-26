@@ -185,9 +185,9 @@ if(isset($_SESSION['id'])){
                 </div>
                 <div class="section_activite">
                     <h3 class="titre3"> Les commentaires que j'ai postés </h3>
-                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
                             <?php
                             $sql = "SELECT COUNT(*) AS nb FROM commentaires WHERE idAuteur=? LIMIT 5";
                             $query3 = $pdo->prepare($sql);
@@ -220,7 +220,7 @@ if(isset($_SESSION['id'])){
                             $query->execute(array($_SESSION['id']));
                             $nb=0;
                             while($line=$query->fetch()){
-                                $contenu=substr($line['commentaire'], 0, 25). ' ...';
+                                $contenu=substr(stripslashes(nl2br($line['commentaire'])), 0, 25). ' ...';
                                 if($nb == 0){
                                     echo '<a href="./temoignage-'.$line['idTemoignage'].'" class="item active" data-pjax>';
                                         echo '<div class="apercutemoignage">';
@@ -230,7 +230,7 @@ if(isset($_SESSION['id'])){
                                 } else{
                                     echo '<a href="./temoignage-'.$line['idTemoignage'].'" class="item" data-pjax>';
                                         echo '<div class="apercutemoignage">';
-                                            echo '<p>"'.$contenu   .'"</p>';
+                                            echo '<p>"'.$contenu   .'" dans '.$line['titre'].'</p>';
                                         echo '</div>';
                                     echo '</a>';
                                 }
@@ -238,11 +238,11 @@ if(isset($_SESSION['id'])){
                             }
                             ?>
                         </div>
-                        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+                        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+                        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                             <span class="sr-only">Next</span>
                         </a>
