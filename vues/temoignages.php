@@ -69,7 +69,7 @@
                             echo '<input type="text" placeholder="titre" name="titre" required>';
                             echo '<div class="apercu">"'. $parser->parse(substr($contenu, 0, 40));
                             $final= $parser->getAsHtml(); echo explode('[',$final)[0] .' ..."</div>';
-                            echo '<a href="./temoignage-'.$line['id'].'" data-pjax><div class="continuerlecture">continuer la lecture...</div></a>';
+                            echo '<div class="liresuite"><a href="./temoignage-'.$line['id'].'" data-pjax> Lire la suite </a></div>';
                             echo '<input type="submit" value="Accepter"></form>';
                             echo '<form method="POST" action="index.php?action=supprimertemoignage">';
                             echo "<input name='id' value='$id' type='hidden'>";

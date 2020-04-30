@@ -48,7 +48,7 @@ if(isset($_GET['id'])){
             echo "<div class='titretemoignage'><h3>$titre</h3></div>";
             echo '<div class="categorietemoignage">';
             if (isset($_SESSION['admin']) && $_SESSION['admin']=="1" && $line['visible']==0){
-                echo "<form method='POST' action='index.php?action=acceptertemoignage'><input name='id' value='$id' type='hidden'>";
+                echo "<form method='POST' action='index.php?action=acceptertemoignage'><input name='id' value='$id' type='hidden'><input type=\"text\" placeholder=\"titre\" name=\"titre\" required><input type=\"submit\" value=\"Accepter\">";
                 echo "<div class='datepublication'>
                             <select name='categorie'>
                              <option selected value='Scolaire'>Scolaire</option>
@@ -56,8 +56,6 @@ if(isset($_GET['id'])){
                              <option value='Cyber'>Cyberharcèlement</option>
                              <option value='Sexuel'>Sexuel</option>
                             </select></div></div>";
-                echo '<input type="text" placeholder="titre" name="titre" required>';
-                echo '<input type="submit" value="Accepter"></form>';
 
             }else{
                 echo "<p> Catégorie : ". $line['categorie'] . "</p>";
@@ -146,7 +144,7 @@ if(isset($_GET['id'])){
                     }
                 }
 
-                ?></div>
+                ?></>
             </div>
 
             <a href='./temoignages' class='buttonretour2' data-pjax> Retour vers Témoignages </a>

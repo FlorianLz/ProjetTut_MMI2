@@ -577,6 +577,23 @@ z-index:1000;
     text-align: right;
     text-decoration: underline;
 }
+.contenupost form input[type='submit']{
+    background-color:var(--orange2);
+    border:none;
+    padding:6px;
+    color:white;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+.categorietemoignage form input[type='submit']{
+    background-color:var(--orange2);
+    border:none;
+    padding:4px ;
+    color:white;
+    cursor:pointer;
+    margin-left:10px;
+}
 
 /* Contenu page poster */
 
