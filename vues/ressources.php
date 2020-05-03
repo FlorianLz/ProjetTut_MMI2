@@ -27,6 +27,20 @@
         <iframe class="videoyt" src="https://www.youtube.com/embed/eEfKzPVbFU0" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
+        <iframe class="videoyt" src="https://www.youtube.com/embed/KHgWd7_Ys7A" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <iframe class="videoyt" src="https://www.youtube.com/embed/HjYQxis8KgU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <h2 class="titreressource">Presse</h2>
+    <div class="conteneurpresse">
+        <img class="affiche presse" src="./docs/communique.jpg" onclick="ouvrirmodale(this.src);">
+        <div class="dossier_presse">
+            <p>Le dossier de presse est téléchargeable <a class="lien lienpresse" href="./docs/dossier_de_presse.pdf" target="_blank">ici</a>.</p>
+            <embed src=./docs/dossier_de_presse.pdf width="100%" type='application/pdf'/>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </div>

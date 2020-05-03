@@ -759,13 +759,37 @@ footer > div{
     padding-bottom:10px;
 }
 .videoyt{
-    width:40vw;
+    width:49%;
     height:25vw;
+}
+.presse{
+    width:49%;
+}
+.conteneurpresse{
+    display:flex;
+}
+.dossier_presse{
+    width:49%;
+    padding-top: 25px;
+}
+.dossier_presse > p{
+    padding-bottom: 25px;
+    text-align: center;
+}
+embed{
+    height: 93%;
 }
 
 @media screen and (max-width: 768px){
-    .contenuaccueil, .contenutemoignages, .contenuposter, .contenutemoignage, .contenucontact, .contenumapage{
+    .contenuaccueil, .contenutemoignages, .contenuposter, .contenutemoignage, .contenucontact, .contenumapage, .dossier_presse{
         width:100%;
+    }
+    .conteneurpresse{
+        flex-direction: column;
+        align-items: center;
+    }
+    embed{
+        display:none;
     }
     header{
         position: fixed;
