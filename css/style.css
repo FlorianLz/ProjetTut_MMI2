@@ -203,9 +203,12 @@ footer{
     padding-left:20px;
     padding-right:20px;
     color:black;
+    font-family: 'Luciole', sans-serif;
 }
 .but > p > span, .covid > p > span{
     position:relative;
+    font-family: 'Luciole', sans-serif;
+
 }
 .but > p > span:after,.covid > p > span:after{
     content: "";
